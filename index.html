@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>GPS Report Builder</title>
+<style>
+  :root{
+    --ink:#0F172A; --slate:#475569; --bg:#eef2f0; --card:#ffffff; --line:#d7e0db; --accent:#2C3A36;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#e9efec; --slate:#a7b8b1; --bg:#0d1512; --card:#18211d; --line:#2b3733; --accent:#c4ccd2; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink); line-height:1.6;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 80px}
+  header{margin-bottom:28px}
+  h1{font-size:30px; line-height:1.15; margin:0 0 6px; letter-spacing:-.4px}
+  .sub{color:var(--slate); font-size:15px; margin:0}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 24px; margin-bottom:16px}
+  h2{font-size:17px; margin:0 0 8px; letter-spacing:.2px}
+  p{margin:0 0 12px}
+  p:last-child{margin-bottom:0}
+  ul{margin:0 0 12px; padding-left:20px}
+  li{margin-bottom:6px}
+  .lead{font-size:18px; font-weight:600}
+  .mail{display:inline-block; margin-top:4px; font-weight:600}
+  .foot{color:var(--slate); font-size:13.5px; margin-top:26px}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GPS Report Builder</h1>
+    <p class="sub">Game, training and load-monitoring reports for football teams, on macOS</p>
+  </header>
+
+  <div class="card">
+    <p class="lead">Turn a GPS tracker export into a report your coaches will actually read.</p>
+    <p>Load the CSV your tracking system produces, and the app builds game, training and load-monitoring
+       reports with your club's branding — ready to export as PDF or CSV. Everything happens on your own
+       Mac.</p>
+  </div>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Help, bug reports and feature requests: <a href="./support.html">support page</a>, or email
+       <a class="mail" href="mailto:matchstatssupport@gmail.com">matchstatssupport@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>The app collects nothing and transmits nothing. The full statement is in the
+       <a href="./privacy.html">privacy policy</a>.</p>
+  </div>
+
+  <p class="foot">GPS Report Builder is made by Thomas Grech.</p>
+</div>
+</body>
+</html>

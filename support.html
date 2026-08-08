@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Support · GPS Report Builder</title>
+<style>
+  :root{
+    --ink:#0F172A; --slate:#475569; --bg:#eef2f0; --card:#ffffff; --line:#d7e0db; --accent:#2C3A36;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#e9efec; --slate:#a7b8b1; --bg:#0d1512; --card:#18211d; --line:#2b3733; --accent:#c4ccd2; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--ink); line-height:1.6;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 80px}
+  header{margin-bottom:28px}
+  h1{font-size:30px; line-height:1.15; margin:0 0 6px; letter-spacing:-.4px}
+  .sub{color:var(--slate); font-size:15px; margin:0}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 24px; margin-bottom:16px}
+  h2{font-size:17px; margin:0 0 8px; letter-spacing:.2px}
+  p{margin:0 0 12px}
+  p:last-child{margin-bottom:0}
+  ol,ul{margin:0 0 12px; padding-left:20px}
+  li{margin-bottom:6px}
+  .lead{font-size:18px; font-weight:600}
+  .mail{display:inline-block; margin-top:4px; font-weight:600}
+  .foot{color:var(--slate); font-size:13.5px; margin-top:26px}
+  a{color:var(--accent)}
+  kbd{background:rgba(128,128,128,.16); padding:1px 6px; border-radius:5px; font-size:.88em;
+      font-family:inherit; font-weight:600; white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GPS Report Builder — Support</h1>
+    <p class="sub">Game, training and load-monitoring reports from GPS tracker exports</p>
+  </header>
+
+  <div class="card">
+    <p class="lead">Need help? Email <a class="mail" href="mailto:matchstatssupport@gmail.com">matchstatssupport@gmail.com</a></p>
+    <p>Tell us your macOS version and what you were doing when it went wrong. If it is about a particular
+       report, the session date and the report type — game, training or load monitoring — help us find it.
+       If a CSV will not load, saying which GPS system it came from is the single most useful detail.</p>
+  </div>
+
+  <div class="card">
+    <h2>Does it need an internet connection?</h2>
+    <p>No. Reports are built on your own Mac and nothing is uploaded. You can work at a ground with no
+       signal at all. A connection is needed only to take out or restore a subscription, which Apple
+       handles.</p>
+  </div>
+
+  <div class="card">
+    <h2>Where are my reports kept?</h2>
+    <p>In the app's own folder in your Library, organised per workspace. Reports you export as PDF or CSV
+       go to your Downloads folder.</p>
+    <p>They are ordinary files, so they are included whenever you back up your Mac — with Time Machine,
+       for example. There is no cloud copy, so a lost Mac with no backup means lost reports.</p>
+  </div>
+
+  <div class="card">
+    <h2>My CSV will not load</h2>
+    <p>The app reads the CSV exports produced by GPS tracking systems, which differ between vendors and
+       between firmware versions. If yours is rejected, send us the file — or just its first two lines,
+       which carry the column headings — and we will tell you whether it is supported.</p>
+    <p>Check first that you are exporting the per-player summary rather than the raw position log.</p>
+  </div>
+
+  <div class="card">
+    <h2>The subscription options are blank</h2>
+    <p>That means the App Store did not return the prices, usually a temporary network problem. Use
+       <kbd>Try again</kbd> on the paywall, and if it persists, check that you are signed in to the App
+       Store and try again in a few minutes. Hovering the message shows the underlying reason, which is
+       worth including if you email us.</p>
+  </div>
+
+  <div class="card">
+    <h2>I already subscribed but the app is locked</h2>
+    <p>Use <kbd>Restore Purchases</kbd> on the subscription screen. That asks Apple to re-check your
+       Apple Account, which is also what to do after reinstalling or moving to a new Mac.</p>
+  </div>
+
+  <div class="card">
+    <h2>How do I cancel?</h2>
+    <p><kbd>Manage Subscription</kbd> on the subscription screen opens the App Store's own subscription
+       settings, where you can change or cancel. Cancelling stops the renewal; the subscription keeps
+       working until the period you have paid for ends.</p>
+  </div>
+
+  <div class="card">
+    <h2>Moving to a new Mac</h2>
+    <p>Install the app, then use <kbd>Restore Purchases</kbd>. Your reports do not transfer on their own —
+       copy them across with Migration Assistant, or from a Time Machine backup, before you retire the old
+       Mac.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>Nothing you load into the app leaves your Mac. The details are in the
+       <a href="./privacy.html">privacy policy</a>.</p>
+  </div>
+
+  <p class="foot">GPS Report Builder is a macOS app for coaches and performance staff. Questions,
+     bug reports and feature requests are all welcome at the address above.</p>
+</div>
+</body>
+</html>
