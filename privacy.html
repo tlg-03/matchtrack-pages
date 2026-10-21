@@ -38,95 +38,208 @@
 <div class="wrap">
   <header>
     <h1>MatchTrack — Privacy Policy</h1>
-    <p class="sub">Last updated 17 October 2026</p>
+    <p class="sub">Last updated 21 October 2026</p>
   </header>
 
   <div class="card">
-    <p class="lead">MatchTrack collects no personal information, and your work never leaves your Mac.</p>
-    <p>There are no accounts, no sign-in, no analytics, no advertising and no tracking of any kind. Your
-       reports, players and files are never sent to us or to anyone. The one thing we receive is Apple's
-       notice when a subscription changes, described under Subscriptions below, and it contains nothing
-       that identifies you.</p>
+    <p class="lead">The MatchTrack app collects no personal information, and nothing you put into it is sent to us unless you send it yourself.</p>
+    <p>There are no accounts, no sign-in, no analytics, no advertising and no tracking of any kind. The
+       app never sends your reports, players or files to us or to anyone else. They leave your Mac or
+       iPad only when you export or share them yourself, or in your device's own backups if you use
+       them (Time Machine, or iCloud or computer backups of an iPad). Apart from what you choose to send
+       us when you ask for help, the one thing we receive is Apple's notice when a subscription changes,
+       described under Subscriptions below. It carries no name and no email address, though we can match
+       it to you if you write to us about your subscription.</p>
+    <p>This policy covers MatchTrack on Mac and on iPad. Where the two work differently, it says so.</p>
   </div>
 
   <div class="card">
     <h2>Where your data lives</h2>
     <p>Everything you load or create — GPS exports, player names, session dates, opposition, your saved
        reports, team branding, opponent badges and player photographs — is stored
-       <strong>on your own Mac</strong>, in the app's folder inside your Library. None of it reaches us
-       and none of it reaches anyone else.</p>
-    <p>Reports you export as PDF or CSV are ordinary files saved to your Downloads folder. Those copies
-       are yours; where they go afterwards and who can see them is entirely under your control.</p>
+       <strong>on your own Mac or iPad</strong>, in the app's own storage. None of it reaches us, and the
+       app sends none of it to anyone else.</p>
+    <ul>
+      <li><strong>On a Mac</strong>, it is in the app's folder inside your Library:
+          <code>~/Library/<wbr>Containers/<wbr>com.thomasgrech.matchtrack</code>. The Mac app runs in Apple's App
+          Sandbox, which is why it is there and not in <code>~/Library/<wbr>Application Support</code>.</li>
+      <li><strong>On an iPad</strong>, it is inside the app itself, in the app's own storage on the
+          iPad.</li>
+    </ul>
+    <p>In the same place, the app's interface keeps a working copy of your saved reports and settings,
+       and the app keeps automatic restore points — earlier copies of your reports, GPS files and
+       settings, but not photographs — so that a mistake can be undone. It keeps up to ten for each
+       workspace.</p>
+    <p>Reports you export as PDF or CSV, backup files and support packages are ordinary files, made only
+       when you ask for them. On a Mac they are saved to your Downloads folder (a PDF or CSV goes to the
+       app's own Exports folder instead if Downloads cannot be written to). On an iPad they appear in
+       Files › On My iPad › MatchTrack, in folders called Exports, Backups and Support, and the share
+       sheet opens so you can AirDrop, mail, print or save them elsewhere. Those copies are yours; where
+       they go afterwards and who can see them is entirely under your control.</p>
+    <p>A backup file is a full copy of the workspaces you choose — reports, GPS files, player
+       photographs, badges and settings — together with the app's version and the name of the Mac or
+       iPad it was made on. A backup made on a Mac also records where the app keeps its data on that Mac,
+       and that folder's name includes your macOS account name. Treat it as you would the reports
+       themselves.</p>
+    <p>Your device's own backups include the app's data, as they do for other apps: Time Machine on a
+       Mac, and iCloud or computer backups of an iPad. On an iPad the app leaves its restore points out
+       of those backups. MatchTrack itself keeps no copy anywhere else, and does not sync between your
+       devices.</p>
+  </div>
+
+  <div class="card">
+    <h2>Files and photos you bring in</h2>
+    <p>The app reads a file only when you give it one. On a Mac, that is through the standard Open
+       window or by dragging a file into the app's window. On an iPad, it is through the Files picker, by dragging
+       a file in from Files, or by opening a CSV or a backup file in MatchTrack from Mail, Files or
+       AirDrop. A file opened that way
+       is copied into the app so it can be read, and the copy is deleted once it has been read; if the
+       app closes before then, the copy is deleted the first time the app is opened a day or more later.
+       A file opened straight from Files is left where it is.</p>
+    <p>On an iPad, adding a player photo or a club crest offers your photo library, the camera or Files,
+       through iPadOS's own picker. The app receives only the picture you choose, and stores it with that
+       workspace's data.</p>
+    <p>On either device, a player photo — and usually a crest — is kept as the file you chose, so any
+       details the file carries, such as where and when a photo was taken, stay with it, including in any
+       backup file you make.</p>
   </div>
 
   <div class="card">
     <h2>Player data</h2>
     <p>The names, physical performance figures and photographs in this app describe real people, often
        young athletes. They come from GPS exports and photos you supply, they are written only to your
-       own Mac, and nothing in the app uploads, shares or analyses them anywhere else.</p>
+       own Mac or iPad, and nothing in the app uploads or analyses them anywhere else. They leave the
+       device only in a report, export or backup file that you make and send yourself, or in the
+       device's own backups if you use them.</p>
     <p>Because that data stays with you, so does the responsibility for it. If your club has obligations
-       about handling player information, they apply to the files on your Mac and to any report you
-       choose to share.</p>
+       about handling player information, they apply to the data on your Mac or iPad, to that device's
+       backups, and to any report or backup file you choose to share.</p>
   </div>
 
   <div class="card">
     <h2>Network use</h2>
-    <p>The app runs a small web server on your Mac in order to display its own interface. It listens only
-       on <code>127.0.0.1</code> — the loopback address, which is your Mac talking to itself. It is not
-       reachable from your network or from the internet, and no data passes over it that is not already
-       on your machine.</p>
-    <p>Apart from that, the app makes no network connections of its own. Apple's purchase system talks to
-       the App Store when you subscribe or restore a purchase.</p>
+    <p><strong>On a Mac</strong>, the app runs a small web server on your Mac in order to display its own
+       interface. It listens only on <code>127.0.0.1</code> — the loopback address, which is your Mac
+       talking to itself. It is not reachable from your network or from the internet, and no data passes
+       over it that is not already on your machine.</p>
+    <p><strong>On an iPad</strong>, there is no web server. The interface is served from inside the app,
+       at its own internal address <code>matchtrack://app</code>, without any network connection.</p>
+    <p>Apart from that, neither app contacts any server of ours or any third party. Apple's purchase
+       system talks to the App Store when the app opens, when you come back to it, from time to time
+       while it runs to see whether a subscription has renewed or ended, and when you subscribe, restore,
+       manage a subscription or ask for a refund. On a Mac, macOS may also look up the computer's own
+       name on your network (see Device information). The links on the subscription screen, to Apple's
+       terms and to this policy, open in your web browser.</p>
   </div>
 
   <div class="card">
     <h2>Subscriptions</h2>
     <p>The subscription is handled entirely by Apple through the App Store. Payment details never touch
-       this app — we never see your name, your email address, your card, or your Apple Account.</p>
-    <p>Apple tells the app one thing: whether an active subscription exists. That answer is stored on your
-       Mac so the app knows whether to unlock.</p>
-    <p>Apple also sends us a short notice when a subscription is bought, renewed, cancelled or refunded.
-       It contains Apple's transaction number, the plan, the dates and the App Store country — no name, no
-       email address and nothing from the app. We keep these notices for 400 days to support customers and
-       handle refunds, and then they are deleted. They are held by Cloudflare, which runs the small service
-       that receives them.</p>
+       this app, and Apple does not give us your name, your email address, your card or your Apple
+       Account. One
+       subscription covers MatchTrack on both Mac and iPad.</p>
+    <p>Apple tells the app whether a subscription is active, which plan it is, when it renews or ends,
+       and whether it is in a billing grace period. That answer is stored on your Mac or iPad so the app
+       knows whether to unlock.</p>
+    <p>Apple also sends us a short notice whenever a subscription changes — for example when it is
+       bought, renews, is cancelled, expires, fails to renew or is refunded — on either device. It contains no name, no email address and nothing from the
+       app. Apple's notice also includes the price paid and renewal details, which we do not keep. From
+       each notice we keep only the kind of change, the plan, which app it is for, Apple's transaction
+       and notice numbers, the date of the notice, the purchase, expiry and any refund dates, the App
+       Store country, whether a free trial or other offer applied, Apple's reason code for a refund, and
+       whether it came from Apple's test system. Apple's numbers carry no name or contact details. We
+       keep these records for 400 days to support customers, handle refunds and watch for refund abuse, which we may report to
+       Apple, and then they are deleted. They are held by Cloudflare, which runs
+       the small service that receives them.</p>
+    <p>If you write to us about your subscription, we may use these records to find your purchase and
+       help you, which connects that record to your email address. That is why the App Store lists
+       Purchases as "Data Linked to You": it is your purchase history, used only to support you, and never
+       for tracking or advertising. A notice about a refund or a revoked purchase may also be emailed to
+       our support address; a copy sent that way is kept with our support email rather than deleted after
+       400 days.</p>
     <p>Apple's own handling of your purchase is covered by Apple's privacy policy, not this one.</p>
   </div>
 
   <div class="card">
     <h2>Diagnostics</h2>
     <p>When the interface stalls noticeably, the app writes a short note about which part was slow to a
-       small, size-capped log file on your Mac. It records timings only — no report contents, no player
-       information. Nothing about it is transmitted; it exists so a problem can be identified from the
-       machine it happened on.</p>
+       small, size-capped log file on your Mac or iPad. It records timings, which part of the app it was
+       and how many players were involved — no report contents and no names. Nothing about it is
+       transmitted, and it is not included in backup files you make or in support packages (your device's
+       own backups do copy it); it exists so a problem can be identified from the device it happened on.</p>
+    <p>If you ask us for help, we may ask you for a <strong>support package</strong>. The app makes one
+       only when you choose <kbd>Generate Support Package</kbd> on the subscription screen, and it reaches
+       us only if you send it. On a Mac it is saved to your Downloads folder; on an iPad, to
+       Files › On My iPad › MatchTrack › Support. It is a ZIP of four text files:</p>
+    <ul>
+      <li>the app's version, and on a Mac the macOS version and build, processor type and Mac model, or
+          on an iPad the iPadOS version and iPad model;</li>
+      <li>your subscription status: whether it is active, the plan, the expiry date and whether it is in
+          a grace period, and when the app last saved that;</li>
+      <li>how many workspaces you have, which one is open, and each one's name, season and team name;</li>
+      <li>on an iPad, up to 2,000 lines of the system log: the app's own lines and any error the system
+          reported inside it, from the last 24 hours but no earlier than when the app last started.
+          macOS does not let an App Store app read the system log, so on a Mac this file holds only a
+          note that no log lines were found.</li>
+    </ul>
+    <p>It does not contain your reports, your GPS files or your player photographs. The files are plain
+       text, so you can read them before you send them.</p>
   </div>
 
   <div class="card">
-    <h2>Device identification</h2>
-    <p>The app derives a one-way fingerprint from your Mac's hardware identifier so that a subscription
-       cannot simply be copied to another machine. The fingerprint is a hash: it cannot be
-       turned back into anything identifying, it is stored on your Mac, and it is never sent anywhere.</p>
+    <h2>Device information</h2>
+    <p><strong>On a Mac</strong>, the app reads no hardware identifier. Test versions before 2.0 saved
+       the Mac's hardware identifier in the app's own preferences, to notice a move to a different Mac;
+       this version deletes it the first time it opens. Your subscription is not tied to a machine — it
+       follows your Apple Account.</p>
+    <p>The Mac app also asks macOS for the computer's name, and writes it into any backup file you make,
+       along with the location of the app's data folder, which includes your macOS account name.
+       Only when you make a support package does it read the macOS version, the processor type and the
+       Mac model.</p>
+    <p><strong>On an iPad</strong>, the app reads no hardware identifier. It reads the iPad's name — which
+       iPadOS normally gives apps simply as "iPad" — its iPadOS version and its model, such as
+       <code>iPad16,5</code>. The name goes into any backup file you make, and the version and model only
+       into support packages.</p>
   </div>
 
   <div class="card">
     <h2>Children</h2>
     <p>MatchTrack is a tool for coaches and performance staff, and is not directed at children.
-       It collects no information from anyone. Player details entered or imported by a coach stay on the
-       Mac they were entered on.</p>
+       It collects no information about players or coaches. Player details entered or imported by a coach
+       stay on the Mac or iPad they were entered on, and in that device's own backups, unless the coach
+       exports or shares them.</p>
   </div>
 
   <div class="card">
     <h2>Deleting your data</h2>
-    <p>Because everything is a file on your Mac, deleting the app's folder in your Library removes it.
-       The only thing held elsewhere is the subscription notices described above, which identify no one
-       and are deleted after 400 days. There is no request you need to make of us.</p>
+    <p><strong>On a Mac</strong>, everything the app keeps is in its folder in your Library,
+       <code>~/Library/<wbr>Containers/<wbr>com.thomasgrech.matchtrack</code>; quit the app and delete that folder to
+       remove it. <strong>On an iPad</strong>, deleting the app removes its data from the iPad.</p>
+    <p>Files you exported, backup files, support packages and your device's own backups are separate
+       copies, and are yours to delete. On an iPad, though, anything left in Files › On My iPad ›
+       MatchTrack is deleted along with the app, so move a backup file you want to keep somewhere else
+       first.</p>
+    <p>Deleting a workspace inside the app deletes its files, but its automatic restore points — and,
+       on a Mac, copies the app's interface kept in earlier sessions — can stay in the app's data until
+       that data is removed as above.</p>
+    <p>The only things held elsewhere are the subscription notices described above, which carry no name
+       or email address, and any email you have sent us. If you have written to us, you can ask us to
+       delete that correspondence.</p>
   </div>
 
   <div class="card">
     <h2>Changes</h2>
     <p>If this policy ever changes, the updated version will be posted at this address with a new date at
-       the top. Since the app collects nothing, any change is likely to be clarification rather than
+       the top. Since the app collects so little, any change is likely to be clarification rather than
        substance.</p>
+  </div>
+
+  <div class="card">
+    <h2>If you contact us</h2>
+    <p>If you email us for help, we receive your email address and whatever you attach — which may be a
+       CSV with your players' names and performance figures, a backup file or a support package. Please
+       send only what we ask for. It is kept in our support mailbox, which Google's Gmail hosts, only for
+       as long as we need it to help you, and we delete it if you ask.</p>
   </div>
 
   <div class="card">
@@ -136,8 +249,8 @@
   </div>
 
   <p class="foot">MatchTrack turns GPS tracker exports into game, training and load-monitoring
-     reports. It does its work entirely on your own Mac, and that is not a coincidence — it is why there
-     is so little to write here.</p>
+     reports. It does its work entirely on your own Mac or iPad, and that is not a coincidence — it is
+     why there is so little to write here.</p>
 </div>
 </body>
 </html>
