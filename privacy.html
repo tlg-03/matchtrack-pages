@@ -38,18 +38,19 @@
 <div class="wrap">
   <header>
     <h1>MatchTrack — Privacy Policy</h1>
-    <p class="sub">Last updated 21 October 2026</p>
+    <p class="sub">Last updated 27 October 2026</p>
   </header>
 
   <div class="card">
-    <p class="lead">The MatchTrack app collects no personal information, and nothing you put into it is sent to us unless you send it yourself.</p>
+    <p class="lead">Nothing you put into the MatchTrack app is sent to us unless you send it yourself, and the app collects no names, email addresses or contact details.</p>
     <p>There are no accounts, no sign-in, no analytics, no advertising and no tracking of any kind. The
        app never sends your reports, players or files to us or to anyone else. They leave your Mac or
        iPad only when you export or share them yourself, or in your device's own backups if you use
        them (Time Machine, or iCloud or computer backups of an iPad). Apart from what you choose to send
-       us when you ask for help, the one thing we receive is Apple's notice when a subscription changes,
-       described under Subscriptions below. It carries no name and no email address, though we can match
-       it to you if you write to us about your subscription.</p>
+       us when you ask for help, we receive two things, both described under Subscriptions below: Apple's
+       notice when a subscription changes, and, once a day while you are subscribed, a check from the app
+       of which device is using the subscription. Neither carries your name or email address, though we
+       can match them to you if you write to us about your subscription.</p>
     <p>This policy covers MatchTrack on Mac and on iPad. Where the two work differently, it says so.</p>
   </div>
 
@@ -124,12 +125,14 @@
        over it that is not already on your machine.</p>
     <p><strong>On an iPad</strong>, there is no web server. The interface is served from inside the app,
        at its own internal address <code>matchtrack://app</code>, without any network connection.</p>
-    <p>Apart from that, neither app contacts any server of ours or any third party. Apple's purchase
+    <p>Once a day while you are subscribed, the app contacts our subscription service with the device
+       check described under Subscriptions. Apart from that, neither app contacts any server of ours or any
+       third party. Apple's purchase
        system talks to the App Store when the app opens, when you come back to it, from time to time
        while it runs to see whether a subscription has renewed or ended, and when you subscribe, restore,
        manage a subscription or ask for a refund. On a Mac, macOS may also look up the computer's own
-       name on your network (see Device information). The links on the subscription screen, to Apple's
-       terms and to this policy, open in your web browser.</p>
+       name on your network (see Device information). The links on the subscription screen, to the
+       MatchTrack licence and to this policy, open in your web browser.</p>
   </div>
 
   <div class="card">
@@ -146,7 +149,9 @@
        app. Apple's notice also includes the price paid and renewal details, which we do not keep. From
        each notice we keep only the kind of change, the plan, which app it is for, Apple's transaction
        and notice numbers, the date of the notice, the purchase, expiry and any refund dates, the App
-       Store country, whether a free trial or other offer applied, Apple's reason code for a refund, and
+       Store country, whether a free trial or other offer applied, whether the purchase was the customer's own,
+       shared through Family Sharing or a seat an organisation assigned, Apple's type of revocation and its
+       reason code for a refund, and
        whether it came from Apple's test system. Apple's numbers carry no name or contact details. We
        keep these records for 400 days to support customers, handle refunds and watch for refund abuse, which we may report to
        Apple, and then they are deleted. They are held by Cloudflare, which runs
@@ -157,6 +162,27 @@
        for tracking or advertising. A notice about a refund or a revoked purchase may also be emailed to
        our support address; a copy sent that way is kept with our support email rather than deleted after
        400 days.</p>
+    <p><strong>A subscription is for one person</strong>, on their own Mac and iPad, as the
+       <a href="./terms.html">MatchTrack licence</a> says. So that a subscription shared between several
+       people can be noticed, about once a day while you are subscribed the app sends our service three things
+       (a seat assigned to you through Apple does not, because Apple gives each seat to one person):
+       a random number the app makes the first time it checks in, which identifies that copy of the app
+       and nothing else (it is not taken from your device's hardware; each user account on a Mac makes its
+       own, and on an iPad a reinstall makes a new one, so each usually counts as a separate device; a device
+       set up from another's backup may share its number); whether it is
+       a Mac or an iPad; and Apple's signed record of your subscription. That record carries Apple's
+       transaction numbers, an identifier Apple gives your Apple Account's copy of the app, the plan, its
+       dates and price, the App Store country, and a value Apple uses to tie the record to your device. Of
+       all that we keep only the transaction number the record is filed under, and whether it came from
+       Apple's test system. For each subscription we also keep the random numbers that have checked in, with
+       each one's device type and the first and last day it was seen. A number not seen for more than 60
+       days is removed the next time a device of that subscription checks in, and nothing is kept more than 91 days
+       after it was last seen. We use it only to show a reminder in the app when more Macs, or
+       more iPads, have checked in under one subscription in the last 30 days than one person usually has,
+       and to help you if you write to us. We never use it to decide that anyone has broken the licence,
+       and it never locks or limits the app. It is held by Cloudflare, with the notices above. Like any
+       request over the internet, the check shows your device's IP address to Cloudflare; we do not
+       record it.</p>
     <p>Apple's own handling of your purchase is covered by Apple's privacy policy, not this one.</p>
   </div>
 
@@ -175,7 +201,8 @@
       <li>the app's version, and on a Mac the macOS version and build, processor type and Mac model, or
           on an iPad the iPadOS version and iPad model;</li>
       <li>your subscription status: whether it is active, the plan, the expiry date and whether it is in
-          a grace period, and when the app last saved that;</li>
+          a grace period, and when the app last saved that; and the app's random number and its last
+          device check (described under Subscriptions);</li>
       <li>how many workspaces you have, which one is open, and each one's name, season and team name;</li>
       <li>on an iPad, up to 2,000 lines of the system log: the app's own lines and any error the system
           reported inside it, from the last 24 hours but no earlier than when the app last started.
@@ -200,12 +227,16 @@
        iPadOS normally gives apps simply as "iPad" — its iPadOS version and its model, such as
        <code>iPad16,5</code>. The name goes into any backup file you make, and the version and model only
        into support packages.</p>
+    <p>Both apps make a random number the first time they check in while you are subscribed, and keep it
+       in the app's data. It identifies that copy of the app, not you or your device's hardware; how it is
+       used is described under Subscriptions.</p>
   </div>
 
   <div class="card">
     <h2>Children</h2>
     <p>MatchTrack is a tool for coaches and performance staff, and is not directed at children.
-       It collects no information about players or coaches. Player details entered or imported by a coach
+       It collects no information about players, and nothing about coaches beyond the subscription and
+       device records described above. Player details entered or imported by a coach
        stay on the Mac or iPad they were entered on, and in that device's own backups, unless the coach
        exports or shares them.</p>
   </div>
@@ -222,8 +253,8 @@
     <p>Deleting a workspace inside the app deletes its files, but its automatic restore points — and,
        on a Mac, copies the app's interface kept in earlier sessions — can stay in the app's data until
        that data is removed as above.</p>
-    <p>The only things held elsewhere are the subscription notices described above, which carry no name
-       or email address, and any email you have sent us. If you have written to us, you can ask us to
+    <p>The only things held elsewhere are the subscription notices and device checks described above,
+       which carry no name or email address, and any email you have sent us. If you have written to us, you can ask us to
        delete that correspondence.</p>
   </div>
 
