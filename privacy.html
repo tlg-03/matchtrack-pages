@@ -38,7 +38,7 @@
 <div class="wrap">
   <header>
     <h1>MatchTrack — Privacy Policy</h1>
-    <p class="sub">Last updated 17 November 2026</p>
+    <p class="sub">Last updated 23 November 2026</p>
   </header>
 
   <div class="card">
@@ -78,10 +78,9 @@
        sheet opens so you can AirDrop, mail, print or save them elsewhere. Those copies are yours; where
        they go afterwards and who can see them is entirely under your control.</p>
     <p>A backup file is a full copy of the workspaces you choose — reports, GPS files, player
-       photographs, badges and settings — together with the app's version and the name of the Mac or
-       iPad it was made on. A backup made on a Mac also records where the app keeps its data on that Mac,
-       and that folder's name includes your macOS account name. Treat it as you would the reports
-       themselves.</p>
+       photographs, badges and settings — together with the app's version and whether it was made on a
+       Mac or an iPad. It holds the names, figures and photographs of real players, so treat it as you
+       would the reports themselves.</p>
     <p>Your device's own backups include the app's data, as they do for other apps: Time Machine on a
        Mac, and iCloud or computer backups of an iPad. On an iPad the app leaves its restore points out
        of those backups. MatchTrack itself keeps no copy anywhere else, and does not sync between your
@@ -141,6 +140,12 @@
     <p>Apple tells the app whether a subscription is active, which plan it is, when it renews or ends,
        and whether it is in a billing grace period. That answer is stored on your Mac or iPad so the app
        knows whether to unlock.</p>
+    <p>The app also keeps two dates on the device: the latest time Apple confirmed your subscription,
+       and the latest time the device's clock has shown. They are kept in the app's data and in the
+       device's keychain (only on that device, not in iCloud Keychain), so that setting the clock back
+       cannot keep an ended subscription open. If the app cannot reach Apple for more than a week after a
+       payment date or the end of your plan, it asks you to connect to the internet, and unlocks as soon
+       as Apple confirms the subscription.</p>
     <p>Apple also sends us a short notice whenever a subscription changes — for example when it is
        bought, renews, is cancelled, expires, fails to renew or is refunded — on either device. It contains no name, no email address and nothing from the
        app. Apple's notice also includes the price paid and renewal details, which we do not keep. From
@@ -197,9 +202,11 @@
     <ul>
       <li>the app's version, and on a Mac the macOS version and build, processor type and Mac model, or
           on an iPad the iPadOS version and iPad model;</li>
-      <li>your subscription status: whether it is active, the plan, the expiry date and whether it is in
-          a grace period, and when the app last saved that; and the app's random number and its last
-          device check (described under Subscriptions);</li>
+      <li>your subscription status: whether it is active, the plan and how it is paid, the expiry date
+          and the end of a 12-month commitment, whether it renews, came from an offer code or was assigned
+          by an organisation, whether it is in a grace period or waiting on a payment, the two dates
+          described under Subscriptions, and when the app last saved that; and the app's random number
+          and its last device check (described under Subscriptions);</li>
       <li>how many workspaces you have, which one is open, and each one's name, season and team name;</li>
       <li>on an iPad, up to 2,000 lines of the system log: the app's own lines and any error the system
           reported inside it, from the last 24 hours but no earlier than when the app last started.
@@ -216,14 +223,16 @@
        the Mac's hardware identifier in the app's own preferences, to notice a move to a different Mac;
        this version deletes it the first time it opens. Your subscription is not tied to a machine — it
        follows your Apple Account.</p>
-    <p>The Mac app also asks macOS for the computer's name, and writes it into any backup file you make,
-       along with the location of the app's data folder, which includes your macOS account name.
-       Only when you make a support package does it read the macOS version, the processor type and the
-       Mac model.</p>
+    <p>The Mac app also asks macOS for the computer's name. It is held only while the app runs, and is
+       not saved, put into backup files or sent anywhere. Only when you make a support package does it
+       read the macOS version, the processor type and the Mac model.</p>
     <p><strong>On an iPad</strong>, the app reads no hardware identifier. It reads the iPad's name — which
        iPadOS normally gives apps simply as "iPad" — its iPadOS version and its model, such as
-       <code>iPad16,5</code>. The name goes into any backup file you make, and the version and model only
-       into support packages.</p>
+       <code>iPad16,5</code>. The name is held only while the app runs and is not saved or sent anywhere;
+       the version and model go only into support packages.</p>
+    <p>Backup files record only whether they were made on a Mac or an iPad. Backup files made by test
+       versions before 2.0 (38) also recorded the device's name and, on a Mac, the location of the app's
+       data folder, which includes your macOS account name.</p>
     <p>Both apps make a random number the first time they check in while you are subscribed, and keep it
        in the app's data. It identifies that copy of the app, not you or your device's hardware; how it is
        used is described under Subscriptions.</p>
@@ -242,14 +251,18 @@
     <h2>Deleting your data</h2>
     <p><strong>On a Mac</strong>, everything the app keeps is in its folder in your Library,
        <code>~/Library/<wbr>Containers/<wbr>com.thomasgrech.matchtrack</code>; quit the app and delete that folder to
-       remove it. <strong>On an iPad</strong>, deleting the app removes its data from the iPad.</p>
+       remove it. <strong>On an iPad</strong>, deleting the app removes its data from the iPad. On either,
+       the copy of the two subscription dates kept in the device's keychain (see Subscriptions) stays
+       there, under the name <code>com.thomasgrech.matchtrack.clock-floor</code>. It holds nothing but
+       those two dates and is never sent anywhere.</p>
     <p>Files you exported, backup files, support packages and your device's own backups are separate
        copies, and are yours to delete. On an iPad, though, anything left in Files › On My iPad ›
        MatchTrack is deleted along with the app, so move a backup file you want to keep somewhere else
        first.</p>
-    <p>Deleting a workspace inside the app deletes its files, but its automatic restore points — and,
-       on a Mac, copies the app's interface kept in earlier sessions — can stay in the app's data until
-       that data is removed as above.</p>
+    <p>Deleting a workspace inside the app moves it, with its automatic restore points, to Recently
+       deleted in the backup window, where it can be brought back for 30 days. After 30 days it is
+       removed for good the next time the app opens, and <kbd>Delete now</kbd> in Recently deleted removes
+       it at once.</p>
     <p>The only things held elsewhere are the subscription notices and device checks described above,
        which carry no name or email address, and any email you have sent us. If you have written to us, you can ask us to
        delete that correspondence.</p>
